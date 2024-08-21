@@ -1,0 +1,369 @@
+************************************************************
+Determinar si un número es positivo o negativo
+************************************************************
+
+Algoritmo Ejemplo1
+    Definir numero Como Real
+    Escribir "Ingrese un número: "
+    Leer numero
+    
+    Si numero > 0 Entonces
+        Escribir "El número es positivo."
+    Sino
+        Escribir "El número es negativo o cero."
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Verificar si un número es par o impar
+************************************************************
+
+Algoritmo Ejemplo2
+    Definir numero Como Entero
+    Escribir "Ingrese un número entero: "
+    Leer numero
+    
+    Si numero % 2 = 0 Entonces
+        Escribir "El número es par."
+    Sino
+        Escribir "El número es impar."
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Evaluar el rango de una edad
+************************************************************
+
+Algoritmo Ejemplo3
+    Definir edad Como Entero
+    Escribir "Ingrese su edad: "
+    Leer edad
+    
+    Si edad < 0 Entonces
+        Escribir "Edad no válida."
+    Sino
+        Si edad <= 12 Entonces
+            Escribir "Es un niño."
+        Sino
+            Si edad <= 19 Entonces
+                Escribir "Es un adolescente."
+            Sino
+                Si edad <= 64 Entonces
+                    Escribir "Es un adulto."
+                Sino
+                    Escribir "Es un adulto mayor."
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Determinar el mayor de tres números
+************************************************************
+
+Algoritmo Ejemplo4
+    Definir a, b, c Como Real
+    Escribir "Ingrese tres números: "
+    Leer a
+    Leer b
+    Leer c
+    
+    Si a >= b Entonces
+        Si a >= c Entonces
+            Escribir "El mayor es ", a
+        Sino
+            Escribir "El mayor es ", c
+        FinSi
+    Sino
+        Si b >= c Entonces
+            Escribir "El mayor es ", b
+        Sino
+            Escribir "El mayor es ", c
+        FinSi
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Calcular el descuento en una tienda
+************************************************************
+
+Algoritmo Ejemplo5
+    Definir monto Como Real
+    Escribir "Ingrese el monto de la compra: "
+    Leer monto
+    
+    Si monto > 1000 Entonces
+        descuento <- monto * 0.15
+        Escribir "Descuento aplicado: ", descuento
+    Sino
+        Si monto > 500 Entonces
+            descuento <- monto * 0.10
+            Escribir "Descuento aplicado: ", descuento
+        Sino
+            descuento <- monto * 0.05
+            Escribir "Descuento aplicado: ", descuento
+        FinSi
+    FinSi
+    Escribir "Monto final a pagar: ", monto - descuento
+FinAlgoritmo
+
+************************************************************
+Clasificar una calificación en letras
+************************************************************
+
+Algoritmo Ejemplo6
+    Definir calificacion Como Real
+    Escribir "Ingrese la calificación: "
+    Leer calificacion
+    
+    Si calificacion >= 9 Entonces
+        Escribir "Calificación: A"
+    Sino
+        Si calificacion >= 7 Entonces
+            Escribir "Calificación: B"
+        Sino
+            Si calificacion >= 5 Entonces
+                Escribir "Calificación: C"
+            Sino
+                Escribir "Calificación: D"
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Evaluar si un año es bisiesto
+************************************************************
+
+Algoritmo Ejemplo7
+    Definir año Como Entero
+    Escribir "Ingrese un año: "
+    Leer año
+    
+    Si (año % 4 = 0 Y (año % 100 <> 0 O año % 400 = 0)) Entonces
+        Escribir "El año ", año, " es bisiesto."
+    Sino
+        Escribir "El año ", año, " no es bisiesto."
+    FinSi
+FinAlgoritmo
+
+
+************************************************************
+Verificar si una persona puede votar
+************************************************************
+
+Algoritmo Ejemplo8
+    Definir edad Como Entero
+    Escribir "Ingrese su edad: "
+    Leer edad
+    
+    Si edad >= 18 Entonces
+        Escribir "Usted puede votar."
+    Sino
+        Escribir "Usted no puede votar."
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Calcular el precio con impuestos
+************************************************************
+
+Algoritmo Ejemplo9
+    Definir precio Como Real
+    Definir impuesto Como Real
+    Escribir "Ingrese el precio del producto: "
+    Leer precio
+    
+    Si precio > 100 Entonces
+        impuesto <- precio * 0.20
+    Sino
+        impuesto <- precio * 0.10
+    FinSi
+    
+    Escribir "Impuesto aplicado: ", impuesto
+    Escribir "Precio final: ", precio + impuesto
+FinAlgoritmo
+
+************************************************************
+Verificar el estado de un número según su rango
+************************************************************
+
+Algoritmo Ejemplo10
+    Definir numero Como Real
+    Escribir "Ingrese un número: "
+    Leer numero
+    
+    Si numero < 0 Entonces
+        Escribir "El número es negativo."
+    Sino
+        Si numero >= 0 Y numero <= 10 Entonces
+            Escribir "El número está en el rango de 0 a 10."
+        Sino
+            Escribir "El número es mayor que 10."
+        FinSi
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Determinar el tipo de triángulo según sus lados
+************************************************************
+
+Algoritmo Ejemplo11
+    Definir lado1, lado2, lado3 Como Real
+    Escribir "Ingrese las longitudes de los tres lados del triángulo: "
+    Leer lado1
+    Leer lado2
+    Leer lado3
+    
+    Si lado1 = lado2 Y lado2 = lado3 Entonces
+        Escribir "El triángulo es equilátero."
+    Sino
+        Si lado1 = lado2 O lado2 = lado3 O lado1 = lado3 Entonces
+            Escribir "El triángulo es isósceles."
+        Sino
+            Escribir "El triángulo es escaleno."
+        FinSi
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Calcular el precio de una llamada telefónica
+************************************************************
+
+Algoritmo Ejemplo12
+    Definir minutos Como Real
+    Definir costo Como Real
+    Escribir "Ingrese el número de minutos de la llamada: "
+    Leer minutos
+    
+    Si minutos <= 5 Entonces
+        costo <- minutos * 0.5
+    Sino
+        Si minutos <= 10 Entonces
+            costo <- minutos * 0.4
+        Sino
+            costo <- minutos * 0.3
+        FinSi
+    FinSi
+    
+    Escribir "El costo de la llamada es: ", costo
+FinAlgoritmo
+
+************************************************************
+Determinar el estado de una variable numérica
+************************************************************
+
+Algoritmo Ejemplo13
+    Definir numero Como Real
+    Escribir "Ingrese un número: "
+    Leer numero
+    
+    Si numero < 0 Entonces
+        Escribir "El número es negativo."
+    Sino
+        Si numero = 0 Entonces
+            Escribir "El número es cero."
+        Sino
+            Escribir "El número es positivo."
+        FinSi
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Identificar la estación del año
+************************************************************
+
+Algoritmo Ejemplo14
+    Definir mes Como Entero
+    Escribir "Ingrese el número del mes (1-12): "
+    Leer mes
+    
+    Si mes = 12 O mes = 1 O mes = 2 Entonces
+        Escribir "Es invierno."
+    Sino
+        Si mes = 3 O mes = 4 O mes = 5 Entonces
+            Escribir "Es primavera."
+        Sino
+            Si mes = 6 O mes = 7 O mes = 8 Entonces
+                Escribir "Es verano."
+            Sino
+                Escribir "Es otoño."
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Evaluar el estado de un vehículo según su kilometraje
+************************************************************
+
+Algoritmo Ejemplo16
+    Definir kilometraje Como Real
+    Escribir "Ingrese el kilometraje del vehículo: "
+    Leer kilometraje
+    
+    Si kilometraje < 10000 Entonces
+        Escribir "El vehículo es nuevo."
+    Sino
+        Si kilometraje <= 50000 Entonces
+            Escribir "El vehículo es semi-nuevo."
+        Sino
+            Escribir "El vehículo es usado."
+        FinSi
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Determinar si un año es año nuevo o no
+************************************************************
+
+Algoritmo Ejemplo17
+    Definir año Como Entero
+    Escribir "Ingrese un año: "
+    Leer año
+    
+    Si año = 2024 Entonces
+        Escribir "Feliz Año Nuevo 2024!"
+    Sino
+        Escribir "No es el Año Nuevo 2024."
+    FinSi
+FinAlgoritmo
+
+************************************************************
+Evaluar el tipo de licencia de conducir según la categoría
+************************************************************
+
+Algoritmo Ejemplo20
+    Definir categoria Como Caracter
+    Escribir "Ingrese la categoría de licencia (A, B, C, D): "
+    Leer categoria
+    
+    Si categoria = "A" Entonces
+        Escribir "Licencia para motocicletas."
+    Sino
+        Si categoria = "B" Entonces
+            Escribir "Licencia para automóviles."
+        Sino
+            Si categoria = "C" Entonces
+                Escribir "Licencia para camiones."
+            Sino
+                Si categoria = "D" Entonces
+                    Escribir "Licencia para vehículos especiales."
+                Sino
+                    Escribir "Categoría de licencia no válida."
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
+
